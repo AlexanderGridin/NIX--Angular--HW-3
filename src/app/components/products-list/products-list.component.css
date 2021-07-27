@@ -1,0 +1,17 @@
+.products-list
+{
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0 -15px;
+  padding: 0;
+}
+
+.products-list__item
+{
+  margin: 15px;
+  max-width: 300px;
+  width: 100%;
+}

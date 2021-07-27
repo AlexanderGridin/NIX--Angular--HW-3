@@ -1,0 +1,17 @@
+<div class="product-card">
+  <div class="product-card__header">
+    <div class="product-card__media">
+      <div class="product-card__responsive-img" [ngStyle]="{'background-image': 'url('+ product.image +')'}"></div>
+      <img class="product-card__img visually-hidden" src="{{product.image}}" alt="{{product.title}}" width="300">
+    </div>
+  </div>
+  <div class="product-card__body">
+    <h3 *ngIf="product.title.length > 50" class="product-card__title">{{product.title | cutString:0:50}}...</h3>
+    <h3 *ngIf="product.title.length <= 50" class="product-card__title">{{product.title}}</h3>
+    <div class="product-card__price">{{product.price}} $</div>
+  </div>
+
+  <div class="product-card__footer">
+    <app-button [text]="'View full info'" type="button"></app-button>
+  </div>
+</div>
