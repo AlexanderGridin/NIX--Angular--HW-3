@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { FakeStoreService } from 'src/app/services/fake-store.service';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from 'src/app/interfaces/product';
+
 
 @Component({
   selector: 'app-products-list',
@@ -9,19 +8,15 @@ import { Product } from 'src/app/interfaces/product';
   styleUrls: ['./products-list.component.css']
 })
 export class ProductsListComponent implements OnInit {
-  public getProductsSub: Subscription | undefined;
-  public products: Product[] | undefined;
+  @Input() products!: Product[];
+  @Output() onViewFullInfo: EventEmitter<number> = new EventEmitter<number>();
 
-  constructor(private fakeStore: FakeStoreService) { }
+  constructor() { }
 
-  ngOnInit(): void {
-    this.getProducts();
-  }
+  ngOnInit(): void { }
 
-  private getProducts(): void {
-    this.getProductsSub = <Subscription>this.fakeStore.getProducts().subscribe((products: Product[]): void => {
-      this.products = products;
-    });
+  public onClick(productId: number): void {
+    this.onViewFullInfo.emit(productId);
   }
 
 }

@@ -1,0 +1,9 @@
+<div class="modal">
+  <div class="modal__close-wrapper" (click)="handleClose()"></div>
+  <div class="modal__inner">
+    <button class="modal__close" type="button" (click)="handleClose()">&times;</button>
+    <div class="modal__content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

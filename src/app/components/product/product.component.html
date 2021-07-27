@@ -1,0 +1,20 @@
+<div class="product">
+  <div class="product__body">
+    <div class="product__column">
+      <div class="product__media">
+        <div class="product__responsive-img" [ngStyle]="{'background-image': 'url('+ product.image +')'}"></div>
+        <img class="visually-hidden" src="{{product.image}}" alt="{{product.title}}">
+      </div>
+    </div>
+    <div class="product__column">
+      <h2 class="product__title">{{product.title}}</h2>
+      <div class="product__category">{{product.category}}</div>
+      <div class="product__description">{{product.description}}</div>
+      <div class="product__price">{{product.price}} $</div>
+    </div>
+  </div>
+  <div class="product__footer">
+    <app-button [buttonStyle]="'danger'" [text]="'Remove'" [type]="'button'" (click)="handleRemove()">
+    </app-button>
+  </div>
+</div>

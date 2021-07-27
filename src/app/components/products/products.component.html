@@ -1,7 +1,8 @@
-<div>
-  <app-container>
-    <h1 [ngStyle]="{'text-align': 'center', 'margin' : '25px 0', 'font-size' : '3rem', 'line-height' : '1.3'}">Products
-    </h1>
-    <app-products-list></app-products-list>
-  </app-container>
+<div class="products">
+  <app-modal *ngIf="activeProductId" (onClose)="modalClose($event)">
+    <app-product (onRemove)="handleProductRemove($event)" [product]="findActiveProductById(activeProductId)">
+    </app-product>
+  </app-modal>
+  <app-page-title [text]="'Products'"></app-page-title>
+  <app-products-list [products]="products" (onViewFullInfo)="handleViewFullInfo($event)"></app-products-list>
 </div>

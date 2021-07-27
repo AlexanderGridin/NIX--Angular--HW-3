@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from 'src/app/interfaces/product';
 
 @Component({
@@ -9,8 +9,14 @@ import { Product } from 'src/app/interfaces/product';
 export class ProductCardComponent implements OnInit {
   @Input() product!: Product;
 
+  @Output() onViewFullInfo: EventEmitter<number> = new EventEmitter<number>();
+
   constructor() { }
 
   ngOnInit(): void { }
+
+  public handleViewFullInfoClick(): void {
+    this.onViewFullInfo.emit(this.product.id);
+  }
 
 }

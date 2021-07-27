@@ -11,6 +11,9 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { ContainerComponent } from './components/container/container.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CutStringPipe } from './pipes/cut-string.pipe';
+import { ModalComponent } from './components/modal/modal.component';
+import { PageTitleComponent } from './components/page-title/page-title.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { CutStringPipe } from './pipes/cut-string.pipe';
     ProductCardComponent,
     ContainerComponent,
     ButtonComponent,
-    CutStringPipe
+    CutStringPipe,
+    ModalComponent,
+    PageTitleComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

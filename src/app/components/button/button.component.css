@@ -3,8 +3,6 @@
   padding: 10px 35px;
   font-size: 1rem;
   color: #FFF;
-  background-color: #4B8BF4;
-  border: 2px solid #4B8BF4;
   transition: 0.4s;
   font-family: inherit;
   border-radius: 5px;
@@ -14,7 +12,28 @@
 .button:hover
 {
   background-color: #FFF;
-  color: #4B8BF4;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   cursor: pointer;
+}
+
+.button--primary
+{
+  background-color: #4B8BF4;
+  border: 2px solid #4B8BF4;
+}
+
+.button--primary:hover
+{
+  color: #4B8BF4;
+}
+
+.button--danger
+{
+  background-color: #DD5145;
+  border: 2px solid #DD5145;
+}
+
+.button--danger:hover
+{
+  color: #DD5145;
 }

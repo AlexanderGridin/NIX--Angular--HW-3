@@ -1,1 +1,3 @@
-<button class="button" type="{{type}}">{{text}}</button>
+<button *ngIf="buttonStyle === 'primary'" class="button button--primary" type="{{type}}">{{text}}</button>
+
+<button *ngIf="buttonStyle === 'danger'" class="button button--danger" type="{{type}}">{{text}}</button>
