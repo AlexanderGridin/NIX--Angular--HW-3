@@ -6,8 +6,8 @@
     </div>
   </div>
   <div class="product-card__body">
-    <h3 *ngIf="product.title.length > 40" class="product-card__title">{{product.title | cutString:0:40}}...</h3>
-    <h3 *ngIf="product.title.length <= 40" class="product-card__title">{{product.title}}</h3>
+    <h3 *ngIf="product.title.length > 30" class="product-card__title">{{product.title | cutString:0:30}}...</h3>
+    <h3 *ngIf="product.title.length <= 30" class="product-card__title">{{product.title}}</h3>
     <div class="product-card__price">{{product.price}} $</div>
   </div>
 
