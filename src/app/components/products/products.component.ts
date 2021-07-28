@@ -39,13 +39,13 @@ export class ProductsComponent implements OnInit {
     this.selectedProductId = status;
   }
 
-  public loadProductsFromApi(): void {
-    this.getProducts();
-  }
-
   public removeAllProducts(): void {
     this.products = [];
     localStorage.setItem(this.LOCAL_PRODUCTS, JSON.stringify([]))
+  }
+
+  public getProductsFromApi(): void {
+    this.getProducts();
   }
 
   private getProducts(): void {

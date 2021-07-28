@@ -18,7 +18,7 @@
     <div *ngIf="products.length === 0" class="products__no-products-message">
       <p>No products to show...</p>
       <app-button *ngIf="products.length === 0" [text]="'Load products from API'" class="products__reload-products"
-        [type]="'button'" [buttonStyle]="'primary'" (click)="loadProductsFromApi()">
+        [type]="'button'" [buttonStyle]="'primary'" (click)="getProductsFromApi()">
       </app-button>
     </div>
 
