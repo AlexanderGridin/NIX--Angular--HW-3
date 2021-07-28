@@ -17,6 +17,7 @@ import { ProductComponent } from './components/product/product.component';
 import { ResponsiveImageComponent } from './components/responsive-image/responsive-image.component';
 import { PriceComponent } from './components/price/price.component';
 import { BadgeComponent } from './components/badge/badge.component';
+import { FormatPricePipe } from './pipes/format-price/format-price.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BadgeComponent } from './components/badge/badge.component';
     ProductComponent,
     ResponsiveImageComponent,
     PriceComponent,
-    BadgeComponent
+    BadgeComponent,
+    FormatPricePipe
   ],
   imports: [
     BrowserModule,
