@@ -4,5 +4,7 @@
     </app-product>
   </app-modal>
   <app-page-title [text]="'Products'"></app-page-title>
-  <app-products-list [products]="products" (onViewFullProduct)="handleViewFullProduct($event)"></app-products-list>
+  <app-products-list *ngIf="products.length !== 0" [products]="products"
+    (onViewFullProduct)="handleViewFullProduct($event)"></app-products-list>
+  <div *ngIf="products.length === 0" class="products__no-products-message">No products to show...</div>
 </div>

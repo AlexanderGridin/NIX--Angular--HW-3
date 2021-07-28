@@ -2,3 +2,16 @@
 {
   padding-bottom: 50px;
 }
+
+.products__no-products-message
+{
+  border: 1px solid #ddd;
+  box-shadow: 0 0 25px rgba(0,0,0,0.1);
+  color: #4B8BF4;
+  font-weight: bold;
+  margin: auto;
+  max-width: 450px;
+  padding: 35px;
+  text-align: center;
+  width: 100%;
+}
