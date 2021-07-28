@@ -8,9 +8,9 @@
     </div>
     <div class="product__column">
       <h2 class="product__title">{{product.title}}</h2>
-      <div class="product__category">{{product.category}}</div>
+      <app-badge class="product__category" [text]="product.category"></app-badge>
       <div class="product__description">{{product.description}}</div>
-      <app-price [amount]="product.price" [currency]="'$'"></app-price>
+      <app-price class="product__price" [amount]="product.price" [currency]="'$'"></app-price>
     </div>
   </div>
   <div class="product__footer">

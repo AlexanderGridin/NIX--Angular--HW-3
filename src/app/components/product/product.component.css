@@ -24,21 +24,10 @@
   margin-top: 15px;
 }
 
-.product__category
-{
-  background-color: #4A8AF4;
-  border-radius: 5px;
-  color: #FFF;
-  display: inline-block;
-  padding: 5px 10px;
-}
-
+.product__category,
 .product__price
 {
-  color: #4B8BF4;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
+  display: inline-block;
 }
 
 .product__footer

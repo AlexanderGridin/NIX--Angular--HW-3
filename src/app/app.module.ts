@@ -16,6 +16,7 @@ import { PageTitleComponent } from './components/page-title/page-title.component
 import { ProductComponent } from './components/product/product.component';
 import { ResponsiveImageComponent } from './components/responsive-image/responsive-image.component';
 import { PriceComponent } from './components/price/price.component';
+import { BadgeComponent } from './components/badge/badge.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PriceComponent } from './components/price/price.component';
     PageTitleComponent,
     ProductComponent,
     ResponsiveImageComponent,
-    PriceComponent
+    PriceComponent,
+    BadgeComponent
   ],
   imports: [
     BrowserModule,
