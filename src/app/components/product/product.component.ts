@@ -15,7 +15,7 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public handleRemove(): void {
+  public removeProduct(): void {
     this.onRemove.emit(this.product.id);
   }
 

@@ -15,7 +15,7 @@ export class ProductsListComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  public handleViewFullProduct(productId: number): void {
+  public viewFullProduct(productId: number): void {
     this.onViewFullProduct.emit(productId);
   }
 

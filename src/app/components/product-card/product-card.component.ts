@@ -13,7 +13,7 @@ export class ProductCardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void { console.log(this.product) }
 
   public viewFull(): void {
     this.onViewFull.emit(this.product.id);

@@ -17,7 +17,7 @@ export class ResponsiveImageComponent implements OnInit {
 
   ngOnInit(): void {
     this.actualImageInlineStyle = {
-      'background-image': 'url(' + this.url + ')',
+      'background-image': `url(${this.url})`,
       'width': `${this.width}`,
       'height': `${this.height}`
     };
