@@ -3,6 +3,17 @@
   padding-bottom: 50px;
 }
 
+.products__remove-all-products
+{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.products__footer
+{
+  text-align: center;
+}
+
 .products__no-products-message
 {
   border: 1px solid #ddd;
@@ -14,4 +25,10 @@
   padding: 35px;
   text-align: center;
   width: 100%;
+}
+
+.products__reload-products
+{
+  margin-top: 25px;
+  display: inline-block;
 }
