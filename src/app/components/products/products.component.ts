@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { FakeStoreService } from 'src/app/services/fake-store.service';
+import { FakeStoreService } from 'src/app/services/fake-store/fake-store.service';
 import { Product } from 'src/app/interfaces/product';
 
 @Component({

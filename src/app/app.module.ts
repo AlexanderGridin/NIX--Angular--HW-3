@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FakeStoreService } from './services/fake-store.service';
+import { FakeStoreService } from './services/fake-store/fake-store.service';
 
 import { AppComponent } from './app.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
