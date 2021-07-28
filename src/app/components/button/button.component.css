@@ -1,12 +1,12 @@
 .button
 {
-  padding: 10px 35px;
-  font-size: 1rem;
-  color: #FFF;
-  transition: 0.4s;
-  font-family: inherit;
   border-radius: 5px;
+  color: #FFF;
+  font-family: inherit;
+  font-size: 1rem;
   font-weight: bold;
+  padding: 10px 35px;
+  transition: 0.4s;
 }
 
 .button:hover
