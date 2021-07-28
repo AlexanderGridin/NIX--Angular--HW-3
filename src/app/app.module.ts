@@ -14,6 +14,7 @@ import { CutStringPipe } from './pipes/cut-string/cut-string.pipe';
 import { ModalComponent } from './components/modal/modal.component';
 import { PageTitleComponent } from './components/page-title/page-title.component';
 import { ProductComponent } from './components/product/product.component';
+import { ResponsiveImageComponent } from './components/responsive-image/responsive-image.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProductComponent } from './components/product/product.component';
     CutStringPipe,
     ModalComponent,
     PageTitleComponent,
-    ProductComponent
+    ProductComponent,
+    ResponsiveImageComponent
   ],
   imports: [
     BrowserModule,

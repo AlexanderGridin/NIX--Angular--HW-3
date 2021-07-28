@@ -9,14 +9,14 @@ import { Product } from 'src/app/interfaces/product';
 export class ProductCardComponent implements OnInit {
   @Input() product!: Product;
 
-  @Output() onViewFullInfo: EventEmitter<number> = new EventEmitter<number>();
+  @Output() onViewFull: EventEmitter<number> = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit(): void { }
 
-  public handleViewFullInfoClick(): void {
-    this.onViewFullInfo.emit(this.product.id);
+  public viewFull(): void {
+    this.onViewFull.emit(this.product.id);
   }
 
 }

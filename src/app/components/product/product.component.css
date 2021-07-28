@@ -24,20 +24,6 @@
   margin-top: 15px;
 }
 
-.product__responsive-img
-{
-  background-color: #FFF;
-  background-position: center;
-  background-position: cetner;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
-  margin-bottom: 25px;
-  position: relative;
-  width: 100%;
-  z-index: 2;
-}
-
 .product__category
 {
   background-color: #4A8AF4;

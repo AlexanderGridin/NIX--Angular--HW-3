@@ -2,8 +2,8 @@
   <div class="product__body">
     <div class="product__column">
       <div class="product__media">
-        <div class="product__responsive-img" [ngStyle]="{'background-image': 'url('+ product.image +')'}"></div>
-        <img class="visually-hidden" src="{{product.image}}" alt="{{product.title}}">
+        <app-responsive-image [url]="product.image" [alt]="product.title" [width]="'350px'" [height]="'350px'">
+        </app-responsive-image>
       </div>
     </div>
     <div class="product__column">

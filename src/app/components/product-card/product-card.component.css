@@ -17,35 +17,7 @@
 
 .product-card__media
 {
-  position: relative;
-}
-
-.product-card__media::before
-{
-  background-color: #4B8BF4;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.product-card__responsive-img
-{
-  background-color: #FFF;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
   margin-bottom: 25px;
-  position: relative;
-  width: 100%;
-  z-index: 2;
 }
 
 .product-card__title

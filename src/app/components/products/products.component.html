@@ -1,8 +1,8 @@
 <div class="products">
-  <app-modal *ngIf="activeProductId" (onClose)="modalClose($event)">
-    <app-product (onRemove)="handleProductRemove($event)" [product]="findActiveProductById(activeProductId)">
+  <app-modal *ngIf="selectedProductId" (onClose)="handleModalClose($event)">
+    <app-product (onRemove)="handleProductRemove($event)" [product]="getProductById(selectedProductId)">
     </app-product>
   </app-modal>
   <app-page-title [text]="'Products'"></app-page-title>
-  <app-products-list [products]="products" (onViewFullInfo)="handleViewFullInfo($event)"></app-products-list>
+  <app-products-list [products]="products" (onViewFullProduct)="handleViewFullProduct($event)"></app-products-list>
 </div>
