@@ -5,21 +5,23 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FormatPricePipe implements PipeTransform {
 
-  transform(value: number): string {
-    let numberString: string = value.toString();
-    let numberComponents: string[] = numberString.replace(',', '.').split('.');
-    let numberDecimals: string = numberComponents[1];
+  transform(price: number): string {
+    let priceString: string = price.toString();
+    let priceParts: string[] = priceString.replace(',', '.').split('.');
 
-    if (numberComponents.length === 1) {
-      return `${numberComponents[0]}.00`;
+    const priceWholeNumberPart: string = priceParts[0];
+    const priceDecimalPart: string = priceParts[1];
+
+    if (priceParts.length === 1) {
+      return `${priceWholeNumberPart}.00`;
     }
 
-    if (numberComponents.length === 2 && numberDecimals.length === 1) {
-      numberComponents[1] = `${numberDecimals}0`;
-      return numberComponents.join('.');
+    if (priceParts.length === 2 && priceDecimalPart.length === 1) {
+      priceParts[1] = `${priceDecimalPart}0`;
+      return priceParts.join('.');
     }
 
-    return numberString;
+    return priceString;
   }
 
 }
