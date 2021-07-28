@@ -14,7 +14,7 @@
   z-index: 9;
 }
 
-.modal__close-wrapper
+.modal__background-closure
 {
   background-color: #000;
   bottom: 0;
@@ -29,7 +29,7 @@
   z-index: 1;
 }
 
-.modal__close-wrapper:hover
+.modal__background-closure:hover
 {
   cursor: pointer;
   opacity: 0.6;

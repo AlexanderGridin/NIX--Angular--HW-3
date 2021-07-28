@@ -1,9 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'cutString'
+  name: 'sliceString'
 })
-export class CutStringPipe implements PipeTransform {
+export class SliceStringPipe implements PipeTransform {
 
   transform(value: string, start?: number, end?: number): string {
     if (!start && !end) {
